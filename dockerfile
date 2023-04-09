@@ -1,10 +1,10 @@
 FROM node:16
 
-WORKDIR / gaurpalsinghchauhan@10-141-50-76 sit323-737-2023-t1-prac5p./app
+WORKDIR /usr/src/app
 
-copy package*.json./
+copy package*.json ./
 RUN npm install
 
 COPY server.js .
-EXPOSE 8080 
+EXPOSE 3040 
 CMD ["node", "server.js"]
